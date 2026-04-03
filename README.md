@@ -1,52 +1,33 @@
 # RunLicense
 
-The RunLicence CLI tool, installable for your platform.
+The RunLicense CLI tool, installable for your platform.
 
-## Installation
+## Quick Install
 
-### macOS (Apple Silicon)
+### macOS / Linux
 
 ```sh
-curl -fsSL https://github.com/runlicense/runlicense/releases/latest/download/runlicense-aarch64-apple-darwin.tar.gz -o runlicense.tar.gz                                                                                                                   
-tar xzf runlicense.tar.gz
-sudo mv runlicense /usr/local/bin/                                                                                                  
-```                                                         
-
-### macOS (Intel)
+curl -fsSL https://raw.githubusercontent.com/runlicense/runlicense/main/install.sh | sh
 ```
-curl -fsSL https://github.com/runlicense/runlicense/releases/latest/download/runlicense-x86_64-apple-darwin.tar.gz -o runlicense.tar.gz                                                                                                                   
-tar xzf runlicense.tar.gz
-sudo mv runlicense /usr/local/bin/                                                                                                  
-``` 
 
-### Linux (x86_64)
-```
-curl -fsSL https://github.com/runlicense/runlicense/releases/latest/download/runlicense-x86_64-unknown-linux-gnu.tar.gz -o          
-runlicense.tar.gz                                         
-tar xzf runlicense.tar.gz
-sudo mv runlicense /usr/local/bin/                                                                                                  
-```
-### Linux (ARM64)                                                                                                                       
-```                                                            
-curl -fsSL https://github.com/runlicense/runlicense/releases/latest/download/runlicense-aarch64-unknown-linux-gnu.tar.gz -o
-runlicense.tar.gz                                                                                                                   
-tar xzf runlicense.tar.gz
-sudo mv runlicense /usr/local/bin/                                                                                                  
-```                                                          
-  ### Windows (x86_64)
-```
-1. Download https://github.com/runlicense/runlicense/releases/latest/download/runlicense-x86_64-pc-windows-msvc.zip                 
-2. Extract runlicense.exe
-3. Move it to a directory in your PATH                                                                                              
- ```                                                           
+This auto-detects your platform and installs the latest version.
 
-## Verify installation                                                                                                                 
+### Windows
 
+1. Download [runlicense-x86_64-pc-windows-msvc.zip](https://github.com/runlicense/runlicense/releases/latest/download/runlicense-x86_64-pc-windows-msvc.zip)
+2. Extract `runlicense.exe`
+3. Move it to a directory in your `PATH`
+
+### Verify installation
+
+```sh
 runlicense --help
+```
 
 ## Updating
 
-To update, re-run the install command for your platform. It will download the latest release.
+To update, re-run the install command. It always fetches the latest release.
 
+## Manual Download
 
-
+Pre-built binaries for all platforms are available on the [Releases](https://github.com/runlicense/runlicense/releases) page.
