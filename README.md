@@ -24,6 +24,25 @@ This auto-detects your platform and installs the latest version.
 runlicense --help
 ```
 
+## Usage
+
+### Authentication
+
+```sh
+runlicense auth login    # Log in (opens browser)
+runlicense auth logout   # Log out and remove stored credentials
+runlicense auth status   # Show current authentication status
+```
+
+On first run, `runlicense` will automatically open your browser to log in.
+
+### Help
+
+```sh
+runlicense --help        # Show all available commands
+runlicense auth --help   # Show auth subcommands
+```
+
 ## Updating
 
 To update, re-run the install command. It always fetches the latest release.
